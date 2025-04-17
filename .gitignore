@@ -8,7 +8,8 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-build/
+.venv
+.venv/Lib/site-packages/pip/_internal/operations/build/
 develop-eggs/
 dist/
 downloads/

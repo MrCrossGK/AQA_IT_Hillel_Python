@@ -30,19 +30,14 @@ swap_elem_1 = people_records.pop(5) # створюю змінну де розм�
 swap_elem_2 = people_records.pop(1) # так само з другим
 people_records.insert(1, swap_elem_1) # тут просто вставив на потрібний індекс в звортоньому порядку
 people_records.insert(5, swap_elem_2) # так само, можливо є більш елегантніше рішення, але воно працює
+# people_records[5], people_records[1] = people_records[1], people_records[5] # То я для себе додав
 print(f"{people_records}\n")
 
 # 3 - check that all people in modified list with records indexes 6, 10, 13
 #   have age >=30. Print condition check result
 # print(people_records[6][2], people_records[10][2], people_records[13][2])
-age_check_list = [] # Пустий лист куди запишемо вік людей с заданимим індексами
-age_check_list.append(people_records[6])
-age_check_list.append(people_records[10])
-age_check_list.append(people_records[13])
-
-for i in age_check_list: # Ну і циклом прогнав список з перевіркою на вік
-    name, surname, age, proffesion, city = i
-    if i[2] >= 30:
-        print(f"Yes, {name} {surname} is over 30 years old, she/he is {age} years old.")
-    else:
-        print(f"No, {name} {surname} is under 30 years old, she/he is {age} years old.")
+# Прибрав все зайве і росто залишив перевірку через "and"
+if people_records[6][2] >= 30 and people_records[10][2] >= 30 and people_records[13][2] >= 30:
+    print(f"Yes, all people in modified list with records indexes 6, 10, 13 have age >=30.")
+else:
+    print(f"Not all people in the modified list with record indexes 6, 10, 13 have age >=30")

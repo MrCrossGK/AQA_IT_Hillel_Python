@@ -1,6 +1,11 @@
 import pytest
 from func_for_tst import is_palindrome, status_info
 
+
+def clear_file():  # Цією функцією ми очищаємо (перезаписуємо) файл
+    with open("logging_status.log", "w") as data:
+        data.write("")
+
 @pytest.mark.parametrize(
   "in_data,res",
   [
@@ -35,6 +40,7 @@ a_250_tickets = [{"ticket_id": 5, "price": 250, "status": "available"}]
         (tickets, 250, "available", a_250_tickets),
     ])
 def test_stat_info(in_data, price, status, res):
+    clear_file()
     act_res = status_info(in_data, price, status)
     exp_res = res
     assert act_res == exp_res

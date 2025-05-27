@@ -1,3 +1,4 @@
+import logging
 
 def is_palindrome(input_data):
     str_1 = list((input_data.lower()).replace(" ", ""))
@@ -35,19 +36,26 @@ tickets = [
 
 
 def status_info(tic, price, status):
+    logging.basicConfig(
+        filename='logging_status.log',
+        level=logging.WARNING,
+        format='%(asctime)s - %(levelname)s - %(message)s',
+        force=True
+    )
+    logger = logging.getLogger("status_info")
     result = []
     for i in tic:
         try:
             if i["status"] == status and i["price"] == price:
                 result.append(i)
             elif i["price"] == 0 or i["price"] is None:
-                print(f"У квитка ticket_id - {i["ticket_id"]} не вказана ціна!")
+                logger.warning(f"У квитка ticket_id - {i["ticket_id"]} не вказана ціна!")
             elif i["status"] is None:
-                print(f"У квитка ticket_id - {i["ticket_id"]} не вказаний статус!")
+                logger.warning(f"У квитка ticket_id - {i["ticket_id"]} не вказаний статус!")
         except KeyError:
-            print(f"Помилка, у ticket_id - {i["ticket_id"]}, не вказаний один або декілька із необхідних параметрів")
+            logger.error(f"Помилка, у ticket_id - {i["ticket_id"]}, не вказаний один або декілька із необхідних параметрів")
 
     return result
 
 
-# print(status_info(tickets, 250, "available"))
+print(status_info(tickets, 250, "available"))

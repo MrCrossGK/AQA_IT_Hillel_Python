@@ -1,4 +1,4 @@
-from tools import address_assign, end_blank_remover  # Імпортуємо декілька функцій:
+from utils import address_assign, end_blank_remover  # Імпортуємо декілька функцій:
 from pathlib import Path                             # 1) address_assign - повертає список всіх csv файлів
 import csv                                           # у папці csv_lib.
                                                      # 2) end_blank_remover - прибирає зайвий "" у всіх

@@ -18,7 +18,7 @@ class Student:
     def set_aver_score(self):
         answer = input("Чи хочете ви змінити середній бал студента за пляхан?)\nНапишіть: Так чи Ні\n").lower()
         if answer == "так":
-            new_value = input("Закинь прєподу пляшку на стіл і вкажи бажаний бал =)\n")
+            new_value = input("Закинь прєподу пляшку на стіл і вкажи бажаний середній бал =)\n")
             self.aver_score = new_value
             self.answer = answer
         elif answer == "ні":

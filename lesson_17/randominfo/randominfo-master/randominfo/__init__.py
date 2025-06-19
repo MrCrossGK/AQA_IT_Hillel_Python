@@ -260,14 +260,14 @@ def get_birthdate(startAge = None, endAge = None, _format = "%d %b, %Y"):
 def get_address():
 	full_addr = []
 	addrParam = ['street', 'landmark', 'area', 'city', 'state', 'country', 'pincode']
-	for i in range(5,12):
-		addrFile = csv.reader(open(full_path('data.csv'), 'r'))
-		allAddrs = []
-		for addr in addrFile:
-			try:
-				if addr[i] != '':
-					allAddrs.append(addr[i])
-			except:
+	for i in range(5,10):  # Тут була проблема щоцикл доходив до індекса елементу, якого не існує
+		addrFile = csv.reader(open(full_path('data.csv'), 'r'))  # якщо прінтанути addr то побачим,
+		allAddrs = []  # що там 9 елементів перші 6 пропуски нафіга не зрозуміло, а ми по індексу
+		for addr in addrFile: # звертались до 10 елемента якого нема і ловили помилку. Взагалі
+			try:  # прикольно що можна ізольовнао витягати функцію і її тестити. Але по більшій
+				if addr[i] != '': # частині я майже ніфіга не розумію що тут коїться і як воно працує
+					allAddrs.append(addr[i]) # і дуже складно на початку було розібратись))
+			except: # Але цікаво) Аще тут фотки якісь є)
 				pass
 		full_addr.append(choice(allAddrs))
 	full_addr = dict(zip(addrParam, full_addr))

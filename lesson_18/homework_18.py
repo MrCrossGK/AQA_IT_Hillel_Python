@@ -98,9 +98,9 @@ def attr_res_logger_decor(func):
 
     def wrapper(*args, **kwargs):
         logger.info(f"Виклик функції {func.__name__} з аргументами: args = {args} або kwargs = {kwargs}.")
-        for value in func(*args, **kwargs):
-            logger.info(f"Функція {func.__name__} повернула значення: {value}.")
-            yield value
+        res = func(*args, **kwargs)
+        logger.info(f"Функція {func.__name__} повернула значення: {res}.")
+        return res
     return wrapper
 
 
@@ -113,9 +113,9 @@ def fib_gen_l(lim):
 
 
 # Закоментив, щоб не заважало.
-# if __name__ == "__main__":
-#     for numb in fib_gen_l(40):
-#         print(f"Число Фібоначчі: {numb}")
+if __name__ == "__main__":
+    for numb in fib_gen_l(40):
+        print(f"Число Фібоначчі: {numb}")
 
 
 # Decorators, task_3_2:
@@ -133,7 +133,7 @@ def sum_func(data):
         return sum(list(map(int, data.split(","))))
 
 
-if __name__ == "__main__":
-    entry_data = ["1,2,3,4", "1,2,3,4,50", 123, "34,2,7,13", True, "qwerty1,2,3", "1,2,3,4,50"]
-    for i in entry_data:
-        print(sum_func(i))
+# if __name__ == "__main__":
+#     entry_data = ["1,2,3,4", "1,2,3,4,50", 123, "34,2,7,13", True, "qwerty1,2,3", "1,2,3,4,50"]
+#     for i in entry_data:
+#         print(sum_func(i))

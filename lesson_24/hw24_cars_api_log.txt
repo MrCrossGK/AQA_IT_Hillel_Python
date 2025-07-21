@@ -1,0 +1,591 @@
+02:08:21 - [INFO] - Виконується авторизація користувача - (homework_24.py:15)
+02:08:21 - [DEBUG] - Отримано токен: {'access_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc1MzEzOTMwMSwianRpIjoiNjQ3YzhjY2ItNWFlZC00ZmEyLWE3MzItYjM1Mjk0YjM0NDBlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6InRlc3RfdXNlciIsIm5iZiI6MTc1MzEzOTMwMSwiY3NyZiI6IjRiMzFiMGM3LTc5YzgtNDM0Ni05ZmNmLWNlMjMwMDE0MjRkMSIsImV4cCI6MTc1MzE0MDIwMX0.rdyWNuUBM0_LDAkusXPW-KezmvbvGNfvzE8135y4SJg'} - (homework_24.py:20)
+02:08:21 - [INFO] - Позитивний тест із параметрами: sort_by=brand, limit=5 - (homework_24.py:35)
+02:08:21 - [DEBUG] - Отримано статус: 200, відповідь: [
+  {
+    "brand": "Acura",
+    "engine_volume": 2.4,
+    "price": 48000,
+    "year": 2020
+  },
+  {
+    "brand": "Audi",
+    "engine_volume": 1.8,
+    "price": 45000,
+    "year": 2020
+  },
+  {
+    "brand": "BMW",
+    "engine_volume": 2.0,
+    "price": 50000,
+    "year": 2018
+  },
+  {
+    "brand": "Bugatti",
+    "engine_volume": 8.0,
+    "price": 350000,
+    "year": 2019
+  },
+  {
+    "brand": "Chevrolet",
+    "engine_volume": 1.8,
+    "price": 28000,
+    "year": 2018
+  }
+]
+ - (homework_24.py:44)
+02:08:21 - [INFO] - Отримані дані являються списком. - (homework_24.py:48)
+02:08:21 - [INFO] - Отримана довжина даних: 5, очікуваний ліміт: 5 - (homework_24.py:52)
+02:08:21 - [INFO] - Отримані дані із параметрами: sort_by=brand, limit=5, відсортовані вірно. - (homework_24.py:57)
+02:08:21 - [INFO] - Позитивний тест із параметрами: sort_by=brand, limit=10 - (homework_24.py:35)
+02:08:21 - [DEBUG] - Отримано статус: 200, відповідь: [
+  {
+    "brand": "Acura",
+    "engine_volume": 2.4,
+    "price": 48000,
+    "year": 2020
+  },
+  {
+    "brand": "Audi",
+    "engine_volume": 1.8,
+    "price": 45000,
+    "year": 2020
+  },
+  {
+    "brand": "BMW",
+    "engine_volume": 2.0,
+    "price": 50000,
+    "year": 2018
+  },
+  {
+    "brand": "Bugatti",
+    "engine_volume": 8.0,
+    "price": 350000,
+    "year": 2019
+  },
+  {
+    "brand": "Chevrolet",
+    "engine_volume": 1.8,
+    "price": 28000,
+    "year": 2018
+  },
+  {
+    "brand": "Ferrari",
+    "engine_volume": 6.3,
+    "price": 250000,
+    "year": 2021
+  },
+  {
+    "brand": "Ford",
+    "engine_volume": 2.2,
+    "price": 32000,
+    "year": 2015
+  },
+  {
+    "brand": "Honda",
+    "engine_volume": 1.6,
+    "price": 30000,
+    "year": 2016
+  },
+  {
+    "brand": "Hyundai",
+    "engine_volume": 1.6,
+    "price": 29000,
+    "year": 2020
+  },
+  {
+    "brand": "Infiniti",
+    "engine_volume": 3.5,
+    "price": 52000,
+    "year": 2019
+  }
+]
+ - (homework_24.py:44)
+02:08:21 - [INFO] - Отримані дані являються списком. - (homework_24.py:48)
+02:08:21 - [INFO] - Отримана довжина даних: 10, очікуваний ліміт: 10 - (homework_24.py:52)
+02:08:21 - [INFO] - Отримані дані із параметрами: sort_by=brand, limit=10, відсортовані вірно. - (homework_24.py:57)
+02:08:21 - [INFO] - Позитивний тест із параметрами: sort_by=brand, limit=21 - (homework_24.py:35)
+02:08:21 - [DEBUG] - Отримано статус: 200, відповідь: [
+  {
+    "brand": "Acura",
+    "engine_volume": 2.4,
+    "price": 48000,
+    "year": 2020
+  },
+  {
+    "brand": "Audi",
+    "engine_volume": 1.8,
+    "price": 45000,
+    "year": 2020
+  },
+  {
+    "brand": "BMW",
+    "engine_volume": 2.0,
+    "price": 50000,
+    "year": 2018
+  },
+  {
+    "brand": "Bugatti",
+    "engine_volume": 8.0,
+    "price": 350000,
+    "year": 2019
+  },
+  {
+    "brand": "Chevrolet",
+    "engine_volume": 1.8,
+    "price": 28000,
+    "year": 2018
+  },
+  {
+    "brand": "Ferrari",
+    "engine_volume": 6.3,
+    "price": 250000,
+    "year": 2021
+  },
+  {
+    "brand": "Ford",
+    "engine_volume": 2.2,
+    "price": 32000,
+    "year": 2015
+  },
+  {
+    "brand": "Honda",
+    "engine_volume": 1.6,
+    "price": 30000,
+    "year": 2016
+  },
+  {
+    "brand": "Hyundai",
+    "engine_volume": 1.6,
+    "price": 29000,
+    "year": 2020
+  },
+  {
+    "brand": "Infiniti",
+    "engine_volume": 3.5,
+    "price": 52000,
+    "year": 2019
+  },
+  {
+    "brand": "Jeep",
+    "engine_volume": 3.6,
+    "price": 45000,
+    "year": 2018
+  },
+  {
+    "brand": "Kia",
+    "engine_volume": 2.0,
+    "price": 31000,
+    "year": 2019
+  },
+  {
+    "brand": "Lamborghini",
+    "engine_volume": 6.5,
+    "price": 300000,
+    "year": 2020
+  },
+  {
+    "brand": "Land Rover",
+    "engine_volume": 2.0,
+    "price": 55000,
+    "year": 2020
+  },
+  {
+    "brand": "Lexus",
+    "engine_volume": 3.0,
+    "price": 60000,
+    "year": 2021
+  },
+  {
+    "brand": "Mazda",
+    "engine_volume": 2.0,
+    "price": 32000,
+    "year": 2018
+  },
+  {
+    "brand": "McLaren",
+    "engine_volume": 4.0,
+    "price": 280000,
+    "year": 2021
+  },
+  {
+    "brand": "Mercedes",
+    "engine_volume": 2.5,
+    "price": 55000,
+    "year": 2019
+  },
+  {
+    "brand": "Nissan",
+    "engine_volume": 1.5,
+    "price": 40000,
+    "year": 2021
+  },
+  {
+    "brand": "Porsche",
+    "engine_volume": 3.0,
+    "price": 70000,
+    "year": 2021
+  },
+  {
+    "brand": "Subaru",
+    "engine_volume": 2.5,
+    "price": 40000,
+    "year": 2017
+  }
+]
+ - (homework_24.py:44)
+02:08:21 - [INFO] - Отримані дані являються списком. - (homework_24.py:48)
+02:08:21 - [INFO] - Отримана довжина даних: 21, очікуваний ліміт: 21 - (homework_24.py:52)
+02:08:21 - [INFO] - Отримані дані із параметрами: sort_by=brand, limit=21, відсортовані вірно. - (homework_24.py:57)
+02:08:21 - [INFO] - Позитивний тест із параметрами: sort_by=brand, limit=0 - (homework_24.py:35)
+02:08:21 - [DEBUG] - Отримано статус: 200, відповідь: []
+ - (homework_24.py:44)
+02:08:21 - [INFO] - Отримані дані являються списком. - (homework_24.py:48)
+02:08:21 - [INFO] - Отримана довжина даних: 0, очікуваний ліміт: 0 - (homework_24.py:52)
+02:08:21 - [INFO] - Позитивний тест із параметрами: sort_by=brand, limit=25 - (homework_24.py:35)
+02:08:21 - [DEBUG] - Отримано статус: 200, відповідь: [
+  {
+    "brand": "Acura",
+    "engine_volume": 2.4,
+    "price": 48000,
+    "year": 2020
+  },
+  {
+    "brand": "Audi",
+    "engine_volume": 1.8,
+    "price": 45000,
+    "year": 2020
+  },
+  {
+    "brand": "BMW",
+    "engine_volume": 2.0,
+    "price": 50000,
+    "year": 2018
+  },
+  {
+    "brand": "Bugatti",
+    "engine_volume": 8.0,
+    "price": 350000,
+    "year": 2019
+  },
+  {
+    "brand": "Chevrolet",
+    "engine_volume": 1.8,
+    "price": 28000,
+    "year": 2018
+  },
+  {
+    "brand": "Ferrari",
+    "engine_volume": 6.3,
+    "price": 250000,
+    "year": 2021
+  },
+  {
+    "brand": "Ford",
+    "engine_volume": 2.2,
+    "price": 32000,
+    "year": 2015
+  },
+  {
+    "brand": "Honda",
+    "engine_volume": 1.6,
+    "price": 30000,
+    "year": 2016
+  },
+  {
+    "brand": "Hyundai",
+    "engine_volume": 1.6,
+    "price": 29000,
+    "year": 2020
+  },
+  {
+    "brand": "Infiniti",
+    "engine_volume": 3.5,
+    "price": 52000,
+    "year": 2019
+  },
+  {
+    "brand": "Jeep",
+    "engine_volume": 3.6,
+    "price": 45000,
+    "year": 2018
+  },
+  {
+    "brand": "Kia",
+    "engine_volume": 2.0,
+    "price": 31000,
+    "year": 2019
+  },
+  {
+    "brand": "Lamborghini",
+    "engine_volume": 6.5,
+    "price": 300000,
+    "year": 2020
+  },
+  {
+    "brand": "Land Rover",
+    "engine_volume": 2.0,
+    "price": 55000,
+    "year": 2020
+  },
+  {
+    "brand": "Lexus",
+    "engine_volume": 3.0,
+    "price": 60000,
+    "year": 2021
+  },
+  {
+    "brand": "Mazda",
+    "engine_volume": 2.0,
+    "price": 32000,
+    "year": 2018
+  },
+  {
+    "brand": "McLaren",
+    "engine_volume": 4.0,
+    "price": 280000,
+    "year": 2021
+  },
+  {
+    "brand": "Mercedes",
+    "engine_volume": 2.5,
+    "price": 55000,
+    "year": 2019
+  },
+  {
+    "brand": "Nissan",
+    "engine_volume": 1.5,
+    "price": 40000,
+    "year": 2021
+  },
+  {
+    "brand": "Porsche",
+    "engine_volume": 3.0,
+    "price": 70000,
+    "year": 2021
+  },
+  {
+    "brand": "Subaru",
+    "engine_volume": 2.5,
+    "price": 40000,
+    "year": 2017
+  },
+  {
+    "brand": "Tesla",
+    "engine_volume": 0.0,
+    "price": 80000,
+    "year": 2020
+  },
+  {
+    "brand": "Toyota",
+    "engine_volume": 2.4,
+    "price": 35000,
+    "year": 2017
+  },
+  {
+    "brand": "Volkswagen",
+    "engine_volume": 2.0,
+    "price": 33000,
+    "year": 2019
+  },
+  {
+    "brand": "Volvo",
+    "engine_volume": 2.0,
+    "price": 46000,
+    "year": 2019
+  }
+]
+ - (homework_24.py:44)
+02:08:21 - [INFO] - Отримані дані являються списком. - (homework_24.py:48)
+02:08:21 - [INFO] - Отримана довжина даних: 25, очікуваний ліміт: 25 - (homework_24.py:52)
+02:08:21 - [INFO] - Отримані дані із параметрами: sort_by=brand, limit=25, відсортовані вірно. - (homework_24.py:57)
+02:08:21 - [INFO] - Позитивний тест із параметрами: sort_by=None, limit=3 - (homework_24.py:35)
+02:08:21 - [DEBUG] - Отримано статус: 200, відповідь: [
+  {
+    "brand": "Acura",
+    "engine_volume": 2.4,
+    "price": 48000,
+    "year": 2020
+  },
+  {
+    "brand": "Audi",
+    "engine_volume": 1.8,
+    "price": 45000,
+    "year": 2020
+  },
+  {
+    "brand": "BMW",
+    "engine_volume": 2.0,
+    "price": 50000,
+    "year": 2018
+  }
+]
+ - (homework_24.py:44)
+02:08:21 - [INFO] - Отримані дані являються списком. - (homework_24.py:48)
+02:08:21 - [INFO] - Отримана довжина даних: 3, очікуваний ліміт: 3 - (homework_24.py:52)
+02:08:21 - [INFO] - Позитивний тест із параметрами: sort_by=brand, limit=None - (homework_24.py:35)
+02:08:21 - [DEBUG] - Отримано статус: 200, відповідь: [
+  {
+    "brand": "Acura",
+    "engine_volume": 2.4,
+    "price": 48000,
+    "year": 2020
+  },
+  {
+    "brand": "Audi",
+    "engine_volume": 1.8,
+    "price": 45000,
+    "year": 2020
+  },
+  {
+    "brand": "BMW",
+    "engine_volume": 2.0,
+    "price": 50000,
+    "year": 2018
+  },
+  {
+    "brand": "Bugatti",
+    "engine_volume": 8.0,
+    "price": 350000,
+    "year": 2019
+  },
+  {
+    "brand": "Chevrolet",
+    "engine_volume": 1.8,
+    "price": 28000,
+    "year": 2018
+  },
+  {
+    "brand": "Ferrari",
+    "engine_volume": 6.3,
+    "price": 250000,
+    "year": 2021
+  },
+  {
+    "brand": "Ford",
+    "engine_volume": 2.2,
+    "price": 32000,
+    "year": 2015
+  },
+  {
+    "brand": "Honda",
+    "engine_volume": 1.6,
+    "price": 30000,
+    "year": 2016
+  },
+  {
+    "brand": "Hyundai",
+    "engine_volume": 1.6,
+    "price": 29000,
+    "year": 2020
+  },
+  {
+    "brand": "Infiniti",
+    "engine_volume": 3.5,
+    "price": 52000,
+    "year": 2019
+  },
+  {
+    "brand": "Jeep",
+    "engine_volume": 3.6,
+    "price": 45000,
+    "year": 2018
+  },
+  {
+    "brand": "Kia",
+    "engine_volume": 2.0,
+    "price": 31000,
+    "year": 2019
+  },
+  {
+    "brand": "Lamborghini",
+    "engine_volume": 6.5,
+    "price": 300000,
+    "year": 2020
+  },
+  {
+    "brand": "Land Rover",
+    "engine_volume": 2.0,
+    "price": 55000,
+    "year": 2020
+  },
+  {
+    "brand": "Lexus",
+    "engine_volume": 3.0,
+    "price": 60000,
+    "year": 2021
+  },
+  {
+    "brand": "Mazda",
+    "engine_volume": 2.0,
+    "price": 32000,
+    "year": 2018
+  },
+  {
+    "brand": "McLaren",
+    "engine_volume": 4.0,
+    "price": 280000,
+    "year": 2021
+  },
+  {
+    "brand": "Mercedes",
+    "engine_volume": 2.5,
+    "price": 55000,
+    "year": 2019
+  },
+  {
+    "brand": "Nissan",
+    "engine_volume": 1.5,
+    "price": 40000,
+    "year": 2021
+  },
+  {
+    "brand": "Porsche",
+    "engine_volume": 3.0,
+    "price": 70000,
+    "year": 2021
+  },
+  {
+    "brand": "Subaru",
+    "engine_volume": 2.5,
+    "price": 40000,
+    "year": 2017
+  },
+  {
+    "brand": "Tesla",
+    "engine_volume": 0.0,
+    "price": 80000,
+    "year": 2020
+  },
+  {
+    "brand": "Toyota",
+    "engine_volume": 2.4,
+    "price": 35000,
+    "year": 2017
+  },
+  {
+    "brand": "Volkswagen",
+    "engine_volume": 2.0,
+    "price": 33000,
+    "year": 2019
+  },
+  {
+    "brand": "Volvo",
+    "engine_volume": 2.0,
+    "price": 46000,
+    "year": 2019
+  }
+]
+ - (homework_24.py:44)
+02:08:21 - [INFO] - Отримані дані являються списком. - (homework_24.py:48)
+02:08:21 - [INFO] - Отримані дані із параметрами: sort_by=brand, limit=None, відсортовані вірно. - (homework_24.py:57)
+02:08:21 - [INFO] - Негативний тест: sort_by=abracadabra, limit=5, очікуваний статус код: 200 - (homework_24.py:68)
+02:08:21 - [DEBUG] - Статус код відповідає очікуваному: 200 - (homework_24.py:81)
+02:08:21 - [INFO] - Негативний тест: sort_by=, limit=5, очікуваний статус код: 200 - (homework_24.py:68)
+02:08:21 - [DEBUG] - Статус код відповідає очікуваному: 200 - (homework_24.py:81)
+02:08:21 - [INFO] - Негативний тест: sort_by=brand, limit=-3, очікуваний статус код: 200 - (homework_24.py:68)
+02:08:21 - [DEBUG] - Статус код відповідає очікуваному: 200 - (homework_24.py:81)
+02:08:21 - [INFO] - Негативний тест: sort_by=brand, limit=abc, очікуваний статус код: 500 - (homework_24.py:68)
+02:08:21 - [DEBUG] - Статус код відповідає очікуваному: 500 - (homework_24.py:81)
+02:08:21 - [INFO] - Негативний тест: sort_by=abracadabra, limit=xyz, очікуваний статус код: 500 - (homework_24.py:68)
+02:08:21 - [DEBUG] - Статус код відповідає очікуваному: 500 - (homework_24.py:81)

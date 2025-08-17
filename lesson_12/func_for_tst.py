@@ -49,7 +49,7 @@ def status_info(tic, price, status):
             if i["status"] == status and i["price"] == price:
                 result.append(i)
             elif i["price"] == 0 or i["price"] is None:
-                logger.warning(f"У квитка ticket_id - {i["ticket_id"]} не вказана ціна!")
+                logger.warning(f'У квитка ticket_id - {i["ticket_id"]} не вказана ціна!')
             elif i["status"] is None:
                 logger.warning(f"У квитка ticket_id - {i["ticket_id"]} не вказаний статус!")
         except KeyError:

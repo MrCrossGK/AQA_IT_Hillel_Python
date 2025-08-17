@@ -5,6 +5,7 @@ from faker import Faker
 
 @allure.epic('Qauto site')
 class TestAllure:
+    @pytest.mark.qauto
     @allure.feature('Registration on site Qato')
     @allure.story('Correct data Registration')
     def test_positive_registration(self, product_page_qauto):
@@ -14,6 +15,7 @@ class TestAllure:
         product_page_qauto.fill_registration_form('George', 'Kocherha', fake_email, 'Gg1234567')
         product_page_qauto.click_register_button()
 
+    @pytest.mark.qauto
     @allure.feature('Registration on site Qato')
     @allure.story('Incorrect data Registration')
     @pytest.mark.parametrize("first_name,last_name,email,password,expected_error", [

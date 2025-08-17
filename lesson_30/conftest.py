@@ -1,6 +1,6 @@
 import pytest
 from selenium.webdriver import Chrome
-from lesson_28.product_page_qauto import ProductPageQAuto
+from lesson_30.product_page_qauto import ProductPageQAuto
 
 
 @pytest.fixture(scope="module")

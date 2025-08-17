@@ -7,6 +7,14 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/MrCrossGK/AQA_IT_Hillel_Python.git'
             }
         }
+        stage('Install browser') {
+            steps {
+                sh '''apt-get update
+                    apt-get install -y chromium fonts-liberation libasound2
+                    chromium --version || true'''
+            }
+        }
+
         stage('Install dependencies') {
             steps {
                 sh '''apt-get update

@@ -26,9 +26,9 @@ pipeline {
         }
         stage('Run tests') {
             steps {
-                sh '''#!/bin/bash
-                    source venv/bin/activate
-                    pytest -m "${PYTEST_MARK}" --alluredir=allure-results'''
+                sh '''. venv/bin/activate
+                      export PYTHONPATH="$WORKSPACE"
+                      pytest -m "${MARKS}" --alluredir=allure-results'''
             }
         }
 

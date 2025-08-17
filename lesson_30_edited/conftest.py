@@ -3,7 +3,7 @@ import os
 from selenium.webdriver.chrome.options import Options
 from selenium import webdriver
 from selenium.webdriver import Chrome
-from lesson_30.product_page_qauto import ProductPageQAuto
+from lesson_30_edited.product_page_qauto import ProductPageQAuto
 
 
 @pytest.fixture(scope="module")

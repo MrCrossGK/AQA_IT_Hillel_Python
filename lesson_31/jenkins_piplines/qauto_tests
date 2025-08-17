@@ -28,15 +28,15 @@ pipeline {
         stage('Run tests') {
             steps {
                 sh '''. venv/bin/activate
-                export PYTHONPATH="$WORKSPACE"
-                pytest -m "${PYTEST_MARK}" --alluredir=allure-results'''
+                      export PYTHONPATH="$WORKSPACE"
+                      pytest lesson_30 -m "${PYTEST_MARK}" --alluredir=allure-results'''
             }
         }
 
     }
     post {
         always {
-            allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
+            allure includeProperties: false, results: [[path: 'allure-results']]
         }
     }
 

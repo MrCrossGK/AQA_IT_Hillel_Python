@@ -51,9 +51,9 @@ def status_info(tic, price, status):
             elif i["price"] == 0 or i["price"] is None:
                 logger.warning(f'У квитка ticket_id - {i["ticket_id"]} не вказана ціна!')
             elif i["status"] is None:
-                logger.warning(f"У квитка ticket_id - {i["ticket_id"]} не вказаний статус!")
+                logger.warning(f'У квитка ticket_id - {i["ticket_id"]} не вказаний статус!')
         except KeyError:
-            logger.error(f"Помилка, у ticket_id - {i["ticket_id"]}, не вказаний один або декілька із необхідних параметрів")
+            logger.error(f'Помилка, у ticket_id - {i["ticket_id"]}, не вказаний один або декілька із необхідних параметрів')
 
     return result
 

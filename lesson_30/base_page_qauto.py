@@ -24,3 +24,4 @@ class BasePageQAuto:
         raw.send_keys(text)
         return raw
 
+

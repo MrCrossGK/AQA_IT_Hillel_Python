@@ -49,4 +49,3 @@ class ProductPageQAuto(BasePageQAuto):
         return [error.text for error in errors if error.text.strip()]
 
 
-

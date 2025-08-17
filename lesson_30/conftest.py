@@ -34,3 +34,4 @@ def driver():
 @pytest.fixture
 def product_page_qauto(driver):
     return ProductPageQAuto(driver=driver)
+

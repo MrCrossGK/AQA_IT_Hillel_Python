@@ -14,4 +14,3 @@ class LocatorsQAuto:
     password_loc = (By.NAME, 'password')
     re_password_loc = (By.NAME, 'repeatPassword')
     error_message_loc = (By.CSS_SELECTOR, ".invalid-feedback")
-

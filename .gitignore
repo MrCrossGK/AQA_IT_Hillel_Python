@@ -2,6 +2,8 @@
 __pycache__/
 *.py[cod]
 *$py.class
+allure-results
+allure-reports
 
 # C extensions
 *.so
@@ -131,6 +133,7 @@ celerybeat.pid
 # Environments
 .env
 .venv
+.idea
 env/
 venv/
 ENV/

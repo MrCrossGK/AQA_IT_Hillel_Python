@@ -19,16 +19,17 @@ pipeline {
         }
         stage('Install requirements') {
             steps {
-                sh '''#!/bin/bash
-                    source venv/bin/activate
+                sh '''python3 -m venv venv
+                    . venv/bin/activate
+                    pip install --upgrade pip
                     pip install -r requirements.txt'''
             }
         }
         stage('Run tests') {
             steps {
                 sh '''. venv/bin/activate
-                      export PYTHONPATH="$WORKSPACE"
-                      pytest -m "${MARKS}" --alluredir=allure-results'''
+                export PYTHONPATH="$WORKSPACE"
+                pytest -m "${PYTEST_MARK}" --alluredir=allure-results'''
             }
         }
 

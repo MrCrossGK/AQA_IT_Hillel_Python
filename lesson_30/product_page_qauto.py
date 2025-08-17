@@ -1,5 +1,5 @@
-from lesson_28.base_page_qauto import BasePageQAuto
-from lesson_28.locators_qauto import LocatorsQAuto
+from lesson_30.base_page_qauto import BasePageQAuto
+from lesson_30.locators_qauto import LocatorsQAuto
 import allure
 
 

@@ -28,7 +28,7 @@ pipeline {
             steps {
                 sh '''. venv/bin/activate
                       export PYTHONPATH="$WORKSPACE"
-                      pytest -m "${MARKS}" --alluredir=allure-results'''
+                      pytest -m "${PYTEST_MARK}" --alluredir=allure-results'''
             }
         }
 
